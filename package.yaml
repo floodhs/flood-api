@@ -1,0 +1,82 @@
+name: flood-api
+
+version: 4.7.0.0
+
+license-file: LICENSE
+
+library:
+  source-dirs: src
+  default-language: GHC2021
+
+  dependencies:
+    - aeson
+    - aeson-optics
+    - base
+    - bytestring
+    - conduit
+    - containers
+    - exceptions
+    - http-client
+    - http-types
+    - modern-uri
+    - mtl
+    - optics
+    - pretty-simple
+    - req
+    - req-conduit
+    - scientific
+    - some
+    - text
+    - time
+    - transformers
+    - unliftio-core
+    - unliftio
+    - unordered-containers
+    - vector
+
+  ghc-options:
+    - -fdefer-typed-holes
+    - -Wall
+    - -fno-warn-type-defaults
+    - -fno-warn-name-shadowing
+    - -fno-warn-missing-home-modules
+    - -Wcompat
+    - -Wincomplete-patterns
+    - -Wincomplete-record-updates
+    - -Wincomplete-uni-patterns
+    - -Wredundant-constraints
+    - -funbox-strict-fields
+
+  default-extensions:
+    - AllowAmbiguousTypes
+    - ApplicativeDo
+    - BlockArguments
+    - DataKinds
+    - DefaultSignatures
+    - DeriveAnyClass
+    - DerivingStrategies
+    - DerivingVia
+    - DuplicateRecordFields
+    - FunctionalDependencies
+    - GADTs
+    - LambdaCase
+    - MagicHash
+    - MultiWayIf
+    - NoFieldSelectors
+    - NoStarIsType
+    - OverloadedLabels
+    - OverloadedLists
+    - OverloadedRecordDot
+    - OverloadedStrings
+    - PartialTypeSignatures
+    - PatternSynonyms
+    - QuantifiedConstraints
+    - QuasiQuotes
+    - RecordWildCards
+    - RoleAnnotations
+    - StrictData
+    - TemplateHaskell
+    - TypeFamilies
+    - TypeFamilyDependencies
+    - UndecidableInstances
+    - ViewPatterns

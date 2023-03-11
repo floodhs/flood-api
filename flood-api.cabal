@@ -1,0 +1,85 @@
+cabal-version: 1.12
+
+-- This file has been generated from package.yaml by hpack version 0.35.0.
+--
+-- see: https://github.com/sol/hpack
+
+name:           flood-api
+version:        4.7.0.0
+license:        GPL-3
+license-file:   LICENSE
+build-type:     Simple
+
+library
+  exposed-modules:
+      Flood.API.Auth
+      Flood.API.Client
+      Flood.API.Effect
+      Flood.API.Frontend
+      Flood.API.Internal.Aeson
+      Flood.API.Time
+      Flood.API.Torrents
+  other-modules:
+      Paths_flood_api
+  hs-source-dirs:
+      src
+  default-extensions:
+      AllowAmbiguousTypes
+      ApplicativeDo
+      BlockArguments
+      DataKinds
+      DefaultSignatures
+      DeriveAnyClass
+      DerivingStrategies
+      DerivingVia
+      DuplicateRecordFields
+      FunctionalDependencies
+      GADTs
+      LambdaCase
+      MagicHash
+      MultiWayIf
+      NoFieldSelectors
+      NoStarIsType
+      OverloadedLabels
+      OverloadedLists
+      OverloadedRecordDot
+      OverloadedStrings
+      PartialTypeSignatures
+      PatternSynonyms
+      QuantifiedConstraints
+      QuasiQuotes
+      RecordWildCards
+      RoleAnnotations
+      StrictData
+      TemplateHaskell
+      TypeFamilies
+      TypeFamilyDependencies
+      UndecidableInstances
+      ViewPatterns
+  ghc-options: -fdefer-typed-holes -Wall -fno-warn-type-defaults -fno-warn-name-shadowing -fno-warn-missing-home-modules -Wcompat -Wincomplete-patterns -Wincomplete-record-updates -Wincomplete-uni-patterns -Wredundant-constraints -funbox-strict-fields
+  build-depends:
+      aeson
+    , aeson-optics
+    , base
+    , bytestring
+    , conduit
+    , containers
+    , exceptions
+    , http-client
+    , http-types
+    , modern-uri
+    , mtl
+    , optics
+    , pretty-simple
+    , req
+    , req-conduit
+    , scientific
+    , some
+    , text
+    , time
+    , transformers
+    , unliftio
+    , unliftio-core
+    , unordered-containers
+    , vector
+  default-language: GHC2021
